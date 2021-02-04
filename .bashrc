@@ -7,10 +7,12 @@
 
 alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
-
+export EDITOR=vim
+export PATH=~/.cargo/bin:$PATH
 
 # My personal modifications
 # Applications
+
 
 
 # Directory
@@ -22,7 +24,6 @@ alias u="cd ~/Desktop/kgec/Unix/unix6"
 alias n="cd ~/Desktop/kgec/Numerical/numerical4"
 alias kgec="cd ~/Desktop/kgec"
 
-export EDITOR=vim
 
 
 alias df='df -h'
@@ -60,6 +61,12 @@ alias merge="xrdb -merge ~/.Xresources"
 # pacman or pm
 alias pacman='sudo pacman --color auto'
 alias update='sudo pacman -Syyu'
+
+# pacman -S
+alias install='sudo pacman -S'
+
+# pacman -Rcs
+alias remove='sudo pacman -Rcs'
 
 #grub update
 alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
